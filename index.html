@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#143d35" />
+    <meta name="description" content="AgroPreço: uma demonstração conceitual de indicadores regionais de preços agrícolas a partir de transações fiscais. Todos os dados são simulados." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="AgroPreço — do documento fiscal ao preço praticado no campo" />
+    <meta property="og:description" content="E se pudéssemos conhecer o preço realmente praticado em cada polo agrícola? Explore esta demonstração com dados simulados." />
+    <meta property="og:image" content="https://jjdsnt.github.io/agro_preco/social.png" />
+    <meta property="og:url" content="https://jjdsnt.github.io/agro_preco/" />
+    <title>AgroPreço — Observatório de Preços Agrícolas</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#explorar">Pular para a demonstração</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="AgroPreço, início"><span class="brand-mark" aria-hidden="true">✳</span> Agro<span>Preço</span></a>
+        <nav aria-label="Navegação principal"><a href="#explorar">Explorar</a><a href="#como-funciona">Como funcionaria</a></nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-line"></span> OBSERVATÓRIO DE PREÇOS AGRÍCOLAS</div>
+            <h1 id="hero-title">Do documento fiscal ao <em>preço praticado</em> no campo.</h1>
+            <p>E se pudéssemos conhecer o preço realmente praticado em cada polo agrícola a partir das notas fiscais eletrônicas?</p>
+            <div class="hero-actions"><a class="button button-light" href="#explorar">Explorar a ideia <span aria-hidden="true">↗</span></a><span class="hero-note">Uma visão possível para o futuro dos dados agrícolas.</span></div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="art-card"><span class="art-kicker">POLO AGRÍCOLA</span><span class="art-amount">R$ 128,40</span><span class="art-sub">SOJA · SACAS DE 60 KG</span><div class="art-wave"><svg viewBox="0 0 280 75" preserveAspectRatio="none"><path d="M0 53 C24 55 31 37 55 43 S84 66 108 46 S140 30 163 39 S194 17 215 25 S248 30 280 8" fill="none" stroke="currentColor" stroke-width="3"/><path d="M0 53 C24 55 31 37 55 43 S84 66 108 46 S140 30 163 39 S194 17 215 25 S248 30 280 8 L280 75 L0 75Z" fill="currentColor" opacity=".12"/></svg></div></div>
+            <div class="art-dot dot-one"></div><div class="art-dot dot-two"></div><div class="art-dot dot-three"></div>
+          </div>
+        </div>
+        <div class="container"><div class="simulation-ribbon"><span class="ribbon-icon" aria-hidden="true">✳</span><strong>Demonstração conceitual</strong><span class="ribbon-separator" aria-hidden="true"></span><span>Dados e preços simulados</span></div></div>
+      </section>
+
+      <section class="explore-section" id="explorar" aria-labelledby="explore-title">
+        <div class="container">
+          <div class="section-heading"><div><span class="section-label">01 / EXPLORE O CONCEITO</span><h2 id="explore-title">O campo tem muitas regiões.<br /><em>Cada uma, seu próprio preço.</em></h2></div><p>Selecione um polo e um produto para ver como indicadores regionais poderiam ser apresentados.</p></div>
+          <div class="explore-layout">
+            <div class="map-panel">
+              <div class="panel-top"><div><span class="micro-label">BRASIL AGRÍCOLA</span><h3>Polos ilustrativos</h3></div><span class="map-count">03 POLOS</span></div>
+              <div class="map-wrap">
+                <svg class="brazil-map" viewBox="0 0 460 490" role="img" aria-labelledby="map-title map-desc"><title id="map-title">Mapa ilustrativo do Brasil</title><desc id="map-desc">Três polos interativos: Oeste da Bahia, Sorriso e Rio Verde.</desc>
+                  <path class="map-shadow" d="M148 39 177 29 200 43 234 38 253 54 278 44 309 60 314 87 336 93 350 122 375 133 366 155 393 171 384 201 364 218 363 252 345 278 333 307 304 330 301 365 283 391 263 416 245 452 221 447 207 427 187 419 168 402 152 380 122 374 107 352 80 348 69 325 78 303 64 286 73 260 61 243 75 221 79 192 59 169 66 144 58 116 76 95 94 106 108 84 132 87Z"/>
+                  <path class="map-land" d="M148 39 177 29 200 43 234 38 253 54 278 44 309 60 314 87 336 93 350 122 375 133 366 155 393 171 384 201 364 218 363 252 345 278 333 307 304 330 301 365 283 391 263 416 245 452 221 447 207 427 187 419 168 402 152 380 122 374 107 352 80 348 69 325 78 303 64 286 73 260 61 243 75 221 79 192 59 169 66 144 58 116 76 95 94 106 108 84 132 87Z"/>
+                  <path class="map-river" d="M124 123q62 36 83 73t73 37M85 250q54-12 92 41t120 21M210 68q8 73 77 111"/>
+                </svg>
+                <button class="map-pin" data-polo="sorriso" style="--x:43%;--y:49%" aria-label="Selecionar Sorriso, Mato Grosso"><span class="pin-pulse"></span><span class="pin-core"></span><span class="pin-label">Sorriso <small>MT</small></span></button>
+                <button class="map-pin" data-polo="bahia" style="--x:68%;--y:54%" aria-label="Selecionar Oeste da Bahia"><span class="pin-pulse"></span><span class="pin-core"></span><span class="pin-label">Oeste da Bahia <small>BA</small></span></button>
+                <button class="map-pin" data-polo="rioverde" style="--x:54%;--y:65%" aria-label="Selecionar Rio Verde, Goiás"><span class="pin-pulse"></span><span class="pin-core"></span><span class="pin-label">Rio Verde <small>GO</small></span></button>
+              </div>
+              <p class="map-footnote">Mapa esquemático, sem limites administrativos ou escala geográfica.</p>
+            </div>
+            <div class="data-panel">
+              <div class="data-panel-header"><div><span class="micro-label">VISUALIZAÇÃO SIMULADA</span><h3 id="polo-heading">Oeste da Bahia <span>· BA</span></h3></div><span class="simulation-tag">SIMULAÇÃO</span></div>
+              <div class="product-tabs" role="group" aria-label="Selecionar produto"><button type="button" data-product="soja">Soja</button><button type="button" data-product="milho">Milho</button><button type="button" data-product="algodao">Algodão</button></div>
+              <div class="price-block" aria-live="polite" aria-atomic="true"><span class="price-caption">PREÇO MÉDIO ILUSTRATIVO</span><div class="price-line"><strong id="price-value">R$ 128,40</strong><span id="price-unit">por saca de 60 kg</span></div><p id="price-date">Data simulada: 12 de agosto de 2025</p></div>
+              <div class="chart-heading"><div><span class="micro-label">EVOLUÇÃO FICTÍCIA</span><h4>Uma leitura ao longo do tempo</h4></div><span id="chart-change" class="chart-change">+4,8% no período</span></div>
+              <div class="chart" role="img" aria-label="Gráfico fictício de evolução de preços"><div class="chart-grid"><span></span><span></span><span></span></div><svg id="price-chart" viewBox="0 0 520 150" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="chart-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#db8c3d" stop-opacity=".28"/><stop offset="100%" stop-color="#db8c3d" stop-opacity="0"/></linearGradient></defs><path id="chart-area" fill="url(#chart-fill)"/><path id="chart-line" fill="none" stroke="#c7762f" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/><circle id="chart-last-dot" r="5" fill="#c7762f" stroke="#fff" stroke-width="3" vector-effect="non-scaling-stroke"/></svg></div>
+              <div class="chart-months"><span>MAR</span><span>ABR</span><span>MAI</span><span>JUN</span><span>JUL</span><span>AGO</span></div>
+              <p class="data-footnote"><span aria-hidden="true">ⓘ</span> Valores criados apenas para ilustrar a experiência. Não são cotações de mercado.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="process-section" id="como-funciona" aria-labelledby="process-title"><div class="container"><div class="process-intro"><span class="section-label">02 / COMO FUNCIONARIA</span><h2 id="process-title">Dos registros às <em>referências regionais.</em></h2><p>Uma forma de transformar transações em informação útil para quem acompanha o mercado agrícola.</p></div><div class="steps"><article class="step"><span class="step-number">01</span><div class="step-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M13 6h16l7 7v29H13zM29 6v8h7M18 23h13M18 29h13M18 35h9"/></svg></div><h3>Nota fiscal eletrônica</h3><p>Registros de comercializações formariam a base, mediante acesso legítimo.</p></article><article class="step"><span class="step-number">02</span><div class="step-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M6 13h36M12 24h24M18 35h12M9 8v10M17 19v10M25 30v10"/></svg></div><h3>Consolidação</h3><p>Transações seriam padronizadas e agrupadas por produto e polo.</p></article><article class="step"><span class="step-number">03</span><div class="step-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M7 39h34M10 31l9-9 8 5 11-16M34 11h4v4"/></svg></div><h3>Preço por região</h3><p>Indicadores agregados mostrariam a evolução dos preços praticados.</p></article></div><div class="method-note"><span aria-hidden="true">✳</span><p>Os preços seriam calculados ponderando valores pelas quantidades, com tratamento de duplicidades e diferenças de unidade.</p></div></div></section>
+
+      <section class="closing-section"><div class="container closing-inner"><span class="section-label">UMA IDEIA PARA EXPLORAR</span><h2>Mais contexto para entender<br /><em>o valor de cada safra.</em></h2><a class="button button-dark" href="#explorar">Rever a demonstração <span aria-hidden="true">↑</span></a></div></section>
+    </main>
+    <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">✳</span> Agro<span>Preço</span></a><p>Uma prova de conceito para visualizar o potencial de indicadores regionais de preços agrícolas.</p></div><div class="footer-disclaimer"><strong>Transparência sobre os dados</strong><p>Todos os preços, volumes e séries apresentados são fictícios. Este site demonstra uma possibilidade técnica e não fornece cotações de mercado.</p><p>O acesso e a divulgação de dados fiscais reais dependeriam de base legal, autorização e agregação que preserve o sigilo.</p></div></div><div class="container footer-bottom"><span>© 2026 AgroPreço · Demonstração conceitual</span><span>Feito para imaginar novas formas de enxergar o campo.</span></div></footer>
+  </body>
+</html>
