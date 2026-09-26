@@ -25,4 +25,4 @@ Abra `index.html` no navegador ou, nesta pasta, execute `python3 -m http.server 
 
 ## Publicação
 
-O repositório usa GitHub Pages a partir da branch `main`, pasta `/` (raiz). Em **Settings → Pages → Build and deployment**, a origem deve estar em **Deploy from a branch**, branch **main** e pasta **/(root)**. Alterações enviadas para `main` atualizam <https://jjdsnt.github.io/agro_preco/>.
+O repositório usa GitHub Pages com o fluxo [`.github/workflows/pages.yml`](.github/workflows/pages.yml). Em **Settings → Pages → Build and deployment**, a origem deve estar em **GitHub Actions**. Alterações enviadas para `main` atualizam <https://jjdsnt.github.io/agro_preco/>; o fluxo também pode ser executado manualmente na aba **Actions**.
